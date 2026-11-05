@@ -1,9 +1,12 @@
-# Analisis exploratorio de datos
+# Analisis de datos
 pandas
 numpy
 matplotlib
+scipy
 
-# Ejecucion de notebooks
+# Aprendizaje profundo
+tensorflow
+
+# Notebooks
 ipykernel
 jupyter
-scipy

@@ -6,3 +6,4 @@ matplotlib
 # Ejecucion de notebooks
 ipykernel
 jupyter
+scipy

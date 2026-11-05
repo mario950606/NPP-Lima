@@ -1,0 +1,8 @@
+# Analisis exploratorio de datos
+pandas
+numpy
+matplotlib
+
+# Ejecucion de notebooks
+ipykernel
+jupyter

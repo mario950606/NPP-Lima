@@ -9,7 +9,7 @@ class GlorotPositivo(initializers.Initializer):
         return tf.abs(initializers.GlorotUniform()(shape, dtype=dtype))
 
 
-def construir_npp(ventana, mu_t, sigma_t, mu_m, sigma_m, m0pred=4.5):
+def construir_npp(ventana, mu_t, sigma_t, mu_m, sigma_m, m0pred=4.5, activacion_magnitud="relu"):
     unidades = 64
     positivo = GlorotPositivo()
     no_negativo = constraints.NonNeg()
@@ -74,7 +74,7 @@ def construir_npp(ventana, mu_t, sigma_t, mu_m, sigma_m, m0pred=4.5):
     # 5. Rama de magnitud: ReLU original
     aux_m = layers.Dense(
         unidades,
-        activation="relu",
+        activation=activacion_magnitud,
         use_bias=False,
         trainable=False,
         kernel_initializer=positivo,

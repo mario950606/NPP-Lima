@@ -10,3 +10,4 @@ tensorflow
 # Notebooks
 ipykernel
 jupyter
+scikit-learn
